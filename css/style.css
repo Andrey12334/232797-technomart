@@ -25,7 +25,7 @@ html, body {
     height: 20px;
     line-height: 24px;
     margin: 0;
-    padding: 13px 52px;
+    padding: 14px 52px;
     text-decoration: none;
     text-transform: uppercase;
     width: 112px;
@@ -75,8 +75,8 @@ a {
     font-weight: inherit;
     height: 46px;
     line-height: 18px;
-    padding-left: 46px;
-    padding-top: 2px;
+    padding-left: 51px;
+    padding-top: 6px;
     width: 100%;
 }
 .page-header-search input:hover {
@@ -120,17 +120,20 @@ a {
 .user-block a {
     box-sizing: border-box;
     color: #ffffff;
-    display: block;
+    
     font-size: 17px;
     line-height: 18px;
-    padding: 0 21px;
+    padding: 15px 27px;
     vertical-align: middle;
+	height: 14px;
 }
 .bookmark {
     margin-left: 2px;
-    margin-right: 12px;
+    margin-right: 1px;
     position: relative;
     z-index: 100;
+	padding: 23px 12px;
+    padding-top:1px;
 }
 .bookmark::before {
     background-image: url("../img/icon-bookmark.svg");
@@ -140,8 +143,7 @@ a {
     height: 19px;
     opacity: 0.3;
     position: absolute;
-    right: 105px;
-    top: -1px;
+    right: 116px;
     width: 19px;
 }
 .bookmark:active {
@@ -152,7 +154,7 @@ a {
 }
 .basket {
     
-    padding-left: 100px;
+   
    
     position: relative;
     width: 73%;
@@ -165,8 +167,7 @@ a {
     height: 19px;
     opacity: 0.3;
     position: absolute;
-    right: 83px;
-    top: 0;
+    right: 96px;
     width: 19px;
 }
 .basket:active {
@@ -177,14 +178,14 @@ a {
 }
 .user-block .order {
     background-color: #63a63e;
-    box-sizing: border-box;
-    display: inline-block;
-    height: 40px;
-   
-    margin-top: -17px;
-    padding: 15px 17px 35px 20px;
+    box-sizing: border-box;  
+    padding: 15px 17px 15px 29px;
     text-align: center;
     vertical-align: middle;
+    margin-left: -11px;
+    margin-right: 6px
+   
+   
 }
 .header-bottom-page-1 {
     background-color: #f2f6f8;
@@ -195,7 +196,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom: -1px;
-    padding-top: 15px;
+    padding-top: 21px;
 }
 .header-information {
     box-sizing: border-box;
@@ -217,15 +218,15 @@ a {
 .header-contacts > div {
     border: 2px solid #ffffff;
     box-sizing: border-box;
-    color: red;
+    color: #e9292a;
     font-size: 21px;
     line-height: 21px;
-    margin-bottom: 3px;
-    padding: 8px 27px 12px 62px;
+    margin-bottom: -2px;
+    padding: 8px 25px 12px 65px;
     width: 259px;
 }
 .adress {
-    padding-left: 0;
+    padding-left: 1px;
 }
 .logo {
     margin-bottom: 12px;
@@ -260,7 +261,7 @@ a {
     background-color: #ffffff;
     margin-right: 10px;
     margin-top: 16px;
-    padding: 8px 26px 10px 32px;
+    padding: 8px 26px 10px 52px;
 }
 .header-authorization .log {
     background-color: #ffffff;
@@ -269,6 +270,7 @@ a {
     margin-top: 16px;
     padding: 10px 27px;
     width: 166px;
+    padding-top:7px;
 }
 .header-authorization a {
     color: #000000;
@@ -306,7 +308,7 @@ a {
     width: 898px;
 }
 .main-menu .head {
-    margin-left: -14px;
+    margin-left: -11px;
 }
 .header-bottom-page-2 {
     background-color: #f2f6f8;
@@ -321,8 +323,8 @@ a {
     display: block;
     font-size: 17px;
     line-height: 17px;
-    margin-right: 24px;
-    padding: 19px;
+    margin-right: 21px;
+    padding: 20px 20px;
     text-align: center;
     vertical-align: middle;
 }
@@ -2351,4 +2353,3 @@ input[type="submit"] {
     background-color: #ee3643;
     border: 1px solid #ee3643;
     color: #ffffff;
-}

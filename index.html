@@ -54,10 +54,9 @@
     	        <li><a class="contacts" href="#">Контакты</a></li>
             </ul>
            </div> 			
-	    </div>
+	     </div>
 		</div>
-    </header>
-	
+    </header>	
     <section class="promo container">
 	 <div class="promo-left">
 	   <div class="promo-item stuff">
@@ -76,7 +75,7 @@
           <div class="promo-slide">
 		    <h2>Перфораторы</h2>		
 			<p>Настоящие мужкие игрушки</p>        			
-            <a class="btn" href="technomart-catalog.html">Открыть каталог</a>
+            <a class="btn" href="techomart-catalog.html">Открыть каталог</a>
             <img src="img/punchers.jpg" alt="Перфораторы" width="620" height="266">      			
           </div>
           <div class="promo-slide">
@@ -207,7 +206,7 @@
             <ul class="tab-nav">
                 <li><a class="shipping" href="#shipping">Доставка</a></li>
                 <li><a class="security" href="#security">Гарантия</a></li>
-                <li><a class="credits" href="#credits">Кредиты</a></li>
+                <li><a class="credits" href="#credits">Кредит</a></li>
             </ul>
 			<div class="box-shadow"></div>
             <div class="tab-panels">
@@ -368,7 +367,7 @@
          <input type="email" id="email" name="email" required placeholder="Для отправки ответа">
 		</div>	
 		<label class="letter" for="address">Текст письма:</label>
-        <textarea id="address" name="address" rows=6" required  placeholder="В свободной форме"></textarea>
+        <textarea id="address" name="address" rows="6" required  placeholder="В свободной форме"></textarea>
 		<div class="submit">	  
 		<button class="btn" type="submit">Отправить</button>
 		</div>
@@ -381,6 +380,37 @@
   <button class="modal-close" type="button">Закрыть</button>
   </section>
    	<script>
+ <!--Скрипт для изменения цвета при нажатии в врехней вкладки-->
+
+
+
+
+	
+var count = 0;
+$( ".user-block" ).each(function() {
+  var $thisParagraph = $( this );
+  var count = 0;
+  $('.bookmarks').click(function() {
+    count++;
+    $thisParagraph.find( ".bookmark" ).text( "Закладки:" + count );
+    $thisParagraph.toggleClass( ".bookmark", count % 3 === 0 );
+	
+  });
+});
+$(document).ready(function(){
+    $('#color_change').click(function(){
+        $('.bookmark').css('background', '#F00', 'height', '133px');
+    })
+});
+	
+	
+	
+	
+	
+	
+	
+	<!--Скрипт для раскрытия форм-->
+	
 
   var buyLink = document.querySelector(".buy");
 
