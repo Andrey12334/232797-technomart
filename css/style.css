@@ -38,6 +38,7 @@ a {
     margin-right: 10px;
     position: relative;
     width: 289px;
+	font-family: "Cuprum","Helvetica",sans-serif;
 }
 .page-header-search:hover {
     background-color: #212a3a;
@@ -211,8 +212,8 @@ a {
     width: 300px;
 }
 .header-contacts {
-    margin-top: 1px;
-    padding-top: 25px;
+    margin-top: -3px;
+    padding-top: 24px;
     width: 286px;
 }
 .header-contacts > div {
@@ -222,7 +223,7 @@ a {
     font-size: 21px;
     line-height: 21px;
     margin-bottom: -2px;
-    padding: 8px 25px 12px 65px;
+    padding: 9px 25px 12px 65px;
     width: 259px;
 }
 .adress {
@@ -338,7 +339,7 @@ a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-bottom: 37px;
+    margin-bottom: 38px;
     margin-top: 24px;
 }
 .promo-left, .promo-right {
@@ -356,7 +357,7 @@ a {
     box-sizing: border-box;
     font-size: 14px;
     line-height: 1.2857;
-    padding: 18px 17px 22px;
+    padding: 19px 20px 22px;
     width: 300px;
 }
 .promo-item a {
@@ -364,6 +365,8 @@ a {
     font-size: 14px;
     line-height: 18px;
     text-transform: uppercase;
+    margin-left: 1px
+    
 }
 .promo-item a:hover {
     background-color: rgba(204, 204, 204, 0.2);
@@ -382,7 +385,7 @@ a {
     border-radius: 3px;
     box-sizing: border-box;
     display: inline-block;
-    padding: 11px 10px 10px;
+    padding: 11px 10px 6px;
     text-align: center;
     vertical-align: middle;
     width: 136px;
@@ -404,9 +407,9 @@ a {
     background-repeat: no-repeat;
     content: "";
     height: 70px;
-    left: 209px;
+    left: 201px;
     position: absolute;
-    top: 30px;
+    top: 27px;
     width: 55px;
 }
 
@@ -426,7 +429,7 @@ a {
     background-repeat: no-repeat;
     content: "";
     height: 70px;
-    left: 209px;
+    left: 187px;
     position: absolute;
     top: 30px;
     width: 90px;
@@ -441,9 +444,9 @@ a {
     background-repeat: no-repeat;
     content: "";
     height: 70px;
-    left: 195px;
+    left: 182px;
     position: absolute;
-    top: 30px;
+    top: 27px;
     width: 90px;
 }
 .promo-item.discount {
@@ -456,9 +459,9 @@ a {
     background-repeat: no-repeat;
     content: "";
     height: 80px;
-    left: 195px;
+    left: 189px;
     position: absolute;
-    top: 30px;
+    top: 20px;
     width: 90px;
 }
 .promo-item.shipping {
@@ -471,9 +474,9 @@ a {
     background-repeat: no-repeat;
     content: "";
     height: 80px;
-    left: 195px;
+    left: 182px;
     position: absolute;
-    top: 30px;
+    top: 26px;
     width: 90px;
 }
 .promo-slide .btn {
@@ -509,7 +512,7 @@ a {
 }
 .promo-slide h2 {
     font-size: 36px;
-    line-height: 30px;
+    line-height: 36px;
     margin-bottom: 1px;
     margin-top: 1px;
     position: relative;
@@ -542,19 +545,20 @@ a {
     height: 28px;
     outline: medium none;
     position: absolute;
-    top: 50%;
+    top: 47%;
     width: 28px;
     z-index: 10;
 }
 .promo-slider-btn:focus {
     box-shadow: 2px -2px 4px 0 rgba(255, 255, 255, 0.5);
+   
 }
 .promo-slider-btn.prev {
-    left: 31px;
+    left: 29px;
     transform: translateY(-50%) rotate(225deg);
 }
 .promo-slider-btn.next {
-    right: 25px;
+    right: 28px;
     transform: translateY(-50%) rotate(45deg);
 }
 .promo-slider-toggles {
@@ -590,7 +594,7 @@ a {
     background-color: red;
 }
 .promo-slide .btn {
-    bottom: 22px;
+    bottom: 25px;
     left: 25px;
     position: absolute;
     width: 195px;
@@ -605,7 +609,7 @@ a {
     font-weight: normal;
     justify-content: space-between;
     margin-bottom: 21px;
-    padding: 6px 27px;
+    padding: 6px 29px;
     text-transform: uppercase;
 }
 .index-content h2 {
@@ -621,11 +625,12 @@ a {
     color: white;
     font-size: 14px;
     line-height: 18px;
-    padding: 8px 50px;
+    padding: 10px 52px;
     text-align: center;
     text-decoration: none;
     text-transform: uppercase;
     vertical-align: middle;
+    width: 145px
 }
 .index-content-2 {
     align-items: center;
@@ -681,7 +686,7 @@ a {
 }
 .catalog-item2 {
     border: 1px solid #ccc;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     margin-bottom: 20px;
     margin-right: 20px;
     text-align: center;
@@ -769,7 +774,7 @@ a {
     box-shadow: 0 3px 0 0 #367315;
     color: white;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -785,7 +790,7 @@ a {
     border-radius: 3px;
     color: #32425c;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -801,7 +806,7 @@ a {
     border-radius: 3px;
     color: #32425c;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum","Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -823,7 +828,7 @@ a {
     border-radius: 3px;
     color: white;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -903,68 +908,41 @@ a {
     text-transform: uppercase;
 }
 .tab-menu p {
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 31px;
     width: 405px;
 }
-.tab-menu .tab-nav {
-    background-color: #32425c;
-    background-repeat: no-repeat;
-    font-size: 21px;
-    font-weight: bold;
-    line-height: 30px;
-    margin-right: 60px;
-    padding-top: 0;
-    width: 239px;
-}
-.tab {
-    margin-right: 6px;
-}
 .tab-nav {
-    margin-bottom: 62px;
-    margin-right: 1px;
-    padding: 0;
+    width: 180px;
+    list-style: none;
+    background-color: #32425c;
+    padding: 0;		
 }
-.tab-nav li {
-    list-style: outside none none;
-    margin-top: 0;
-}
+
 .tab-nav a {
-    color: #ffffff;
     display: block;
-    margin-bottom: 1px;
-    margin-top: 8px;
-    padding: 24px 27px;
-    vertical-align: middle;
-}
-.tab-nav > li > a {
-    box-shadow: 0 1px 0 0 #293449, 0 2px 0 0 #405069;
-    margin-top: -6px;
-}
-.tab-nav li.select a {
-    background: #ffffff none repeat scroll 0 0;
-    color: #32425c;
-}
-.tab-nav a:hover {
-    background-color: #293449;
+    padding: 17px 14px;
+    text-decoration: none;
     color: #ffffff;
+	box-shadow: 0 1px 0 0 #293449, 0 2px 0 0 #405069;
+	  
+
+   
 }
-.tab-nav .shipping {
-    margin-bottom: -12px;
-    padding-left: 21px;
-    padding-top: 31px;
+
+.tab-nav a:hover {
+     background-color: #293449;
+     
 }
-.tab-nav .security {
-    margin-bottom: -14px;
-    margin-top: 1px;
-    padding-left: 24px;
+
+.tab-nav li a {
+	
 }
-.tab-nav .credits {
-    margin-top: 1px;
-    padding-left: 26px;
-}
+
+.credits {
+
+}	
 .tab-panels {
     position: relative;
 }
@@ -985,17 +963,24 @@ a {
     font-weight: normal;
     line-height: 36px;
     text-transform: uppercase;
+    padding-left: 19px;
+    padding-top: 1px
 }
 .tab-panels p {
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 24px;
     width: 268px;
+    
 }
 .shipping-content p {
-    padding-right: 252px;
+    padding-right: 233px;
+   
 }
 .shipping-content h2 {
+    padding-left: 1px;
+    padding-top:5px;
+    margin-bottom: 26px;
 }
 .security-content p {
     padding-right: 153px;
@@ -1072,7 +1057,7 @@ a {
 .about-technomart {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 89px;
+    margin-bottom: 82px;
     margin-top: 52px;
 }
 .about-technomart .index-content-title {
@@ -1093,7 +1078,7 @@ a {
     font-family: "PT Sans",sans-serif;
     font-size: 13px;
     line-height: 24px;
-    margin-bottom: 21px;
+    margin-bottom: 23px;
     width: 498px;
 }
 .suggestions {
@@ -1157,7 +1142,7 @@ a {
 .footer-top {
     background-color: #32425c;
     margin-bottom: -3px;
-    padding: 18px 0;
+    padding: 20px 0;
   
 }
 .page-footer-top-ineer {
@@ -1212,14 +1197,20 @@ a {
     font-size: 18px;
     line-height: 24px;
     margin-right: 50px;
-    margin-top: 1px;
-    padding-top: 15px;
+    margin-top: 2px;
+    padding-top: 12px;
 }
 .menu-bottom-footer a {
     color: #ffd180;
     font-size: 18px;
     margin-left: 1px;
     margin-right: 40px;
+}
+.menu-top-footer .delivery {
+	margin-right: 78px;
+}
+.menu-top-footer .contacts {
+	margin-right: 0px;
 }
 .footer-top-part-1 {
     width: 350px;
@@ -1336,7 +1327,7 @@ a {
     border: medium none;
     border-radius: 3px;
     color: #ffffff;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     line-height: 18px;
     text-align: center;
@@ -1431,7 +1422,7 @@ a {
 .modal-buy h2 {
     font-size: 30px;
     font-weight: normal;
-    line-height: 18px;
+    line-height: 30px;
     padding-left: 150px;
 }
 .modal-login {
@@ -1454,7 +1445,7 @@ a {
 .modal-login textarea {
     border: 2px solid #d7dcde;
     border-radius: 3px;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 5px;
@@ -1468,7 +1459,7 @@ a {
     border-radius: 3px;
     box-sizing: border-box;
     color: #a9a9a9;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin-bottom: 20px;
@@ -1742,14 +1733,14 @@ a {
 }
 .catalog-items {
     display: flex;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-weight: bold;
     margin-bottom: 18px;
     width: 720px;
 }
 .catalog-item-puncher {
     border: 1px solid #ccc;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-weight: normal;
     margin-bottom: -46px;
     margin-right: 20px;
@@ -1870,7 +1861,7 @@ a {
     border-radius: 3px;
     color: #32425c;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -1886,7 +1877,7 @@ a {
     border-radius: 3px;
     color: #32425c;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -1908,7 +1899,7 @@ a {
     border-radius: 3px;
     color: white;
     display: block;
-    font-family: "Cuprum",sans-serif;
+    font-family: "Cuprum", "Helvetica", sans-serif;
     font-size: 14px;
     font-weight: normal;
     line-height: 18px;
@@ -1963,7 +1954,7 @@ a {
 }
 .sorted .link-sorting {
     box-sizing: border-box;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     padding-left: 19px;
 }
 .link-sorting .active {
@@ -2103,7 +2094,7 @@ hr {
     border: medium none;
     border-radius: 5px;
     color: #283136;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 17px;
     margin: 0 0 0 10px;
     max-width: 85px;
@@ -2117,7 +2108,7 @@ hr {
 }
 .price-filter > .filter {
     background-color: #f7f3ec;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans","Helvetica", sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin-top: -3px;
@@ -2126,7 +2117,7 @@ hr {
     margin-bottom: 9px;
 }
 .price-filter .price {
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 17px;
     font-weight: normal;
     line-height: 30px;
@@ -2154,7 +2145,7 @@ hr {
     background: #f1f1f1 none repeat scroll 0 0;
     border-radius: 5px;
     color: #283136;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 17px;
     line-height: 18px;
     text-align: center;
@@ -2165,7 +2156,7 @@ hr {
 input[type="checkbox"] + label, input[type="radio"] + label {
     color: black;
     cursor: pointer;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 15px;
     font-weight: normal;
     line-height: 20px;
@@ -2285,7 +2276,7 @@ input[type="radio"]:disabled + label::before, input[type="checkbox"]:disabled + 
     width: 27px;
 }
 form .maker {
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 17px;
     font-weight: normal;
     line-height: 30px;
@@ -2295,7 +2286,7 @@ form .maker {
     text-transform: uppercase;
 }
 form .food {
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 17px;
     line-height: 30px;
     margin-top: 14px;
@@ -2305,7 +2296,7 @@ input[type="submit"] {
     background-color: #ffffff;
     border: 1px solid #e5e5e5;
     border-radius: 3px;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 18px;
     margin-top: 60px;
@@ -2320,10 +2311,10 @@ input[type="submit"] {
 .about-puch h2 {
     font-size: 30px;
     font-weight: normal;
-    line-height: 24px;
+    line-height: 30px;
 }
 .about-puch p {
-    font-family: "Pt-sans",sans-serif;
+    font-family: "Pt-sans", "Helvetica", sans-serif;
     font-size: 13px;
     line-height: 24px;
     max-width: 927px;
@@ -2338,7 +2329,7 @@ input[type="submit"] {
     border: 1px solid #ccc;
     border-radius: 3px;
     color: #000000;
-    font-family: "PT Sans",sans-serif;
+    font-family: "PT Sans", "Helvetica",sans-serif;
     font-size: 13px;
     line-height: 18px;
     padding: 10px 15px;
@@ -2353,3 +2344,4 @@ input[type="submit"] {
     background-color: #ee3643;
     border: 1px solid #ee3643;
     color: #ffffff;
+}
