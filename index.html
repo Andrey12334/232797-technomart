@@ -3,21 +3,21 @@
 <head>
     <meta charset="utf-8">
     <title>Техномарт</title>
-	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700&amp;subset=latin,cyrillic" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=latin,cyrillic" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,400i,700,700i&amp;subset=cyrillic,cyrillic-ext,latin-ext,vietnamese" rel="stylesheet">
 	<link href="css/normalize.css" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
-	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
 	<script src="js/script.js"></script>
-  </head>
-<body>
+    </head>
+	<body>
    <header>
-     <div class="header-top">
+ <div class="header-top">
       <div class="header-top-wrapper container">	 
-          <a class="main">Техномарт</a>
+	  <a class="main">Техномарт</a>
             <form class="page-header-search" action="#" method="post">
             <input type="search" id="field-search" name="search" placeholder="Поиск:">
-             <label for="field-search">Поиск:</label>
+            <label for="field-search">Поиск:</label>
             </form>
             <ul class="user-block">
                 <li><a class="bookmark" href="#">Закладки:0</a></li>
@@ -114,8 +114,9 @@
             <a class="btn">Все популярные товары </a>
 		 </div>	
         </div>
-		<div class="container">
-        <section class="catalog-items">
+		
+         <section class="catalog-company2">
+            <div class="catalog-company-wrapper2 container">		
             <article class="catalog-item2">
               <div class="action">
                     <a class="buy" href="#" onclick="showPopup()">Купить</a>
@@ -157,13 +158,13 @@
 				<div class="discount"></div>
                 <div class="price">12 500 Р.</div>
             </article>
+            </div>			
         </section>
-		</div>
+		
+		
 		
 		<div class="container">
-         <div class="index-content-2">
-		  
-		    
+         <div class="index-content-2">	    
             <h2 class="index-content-title">Популярные производители:</h2>
             <a class="btn">Все произоводители</a>
 		 </div>	
@@ -204,11 +205,11 @@
 		   	
 			<div class="service-slides">
              <ul class="tab-nav">
-               <li><a class="shipping" href="#shipping">Доставка</a></li>
-               <li><a class="security" href="#security">Гарантия</a></li>
-               <li><a class="credits" href="#credits">Кредит</a></li> 			   
+               <li><a class="shipping"  href="#shipping">Доставка</a></li>
+               <li><a class="security" href="#security">Гарантия</a></li>		  
+               <li><a class="credits" href="#credits">Кредит</a></li>          			   
             </ul>
-			<div class="box-shadow"></div>
+			 <div class="box-shadow"></div>
             <div class="tab-panels">
                 <div id="shipping">
                     <div class="shipping-content">
@@ -216,27 +217,25 @@
                         <p>Мы с удовольствием доставим товар прямо
                           к вашему подъезду совершенно бесплатно!
 		                  Ведь мы неплохо заработаем<br> поднимая,
-		                    поднимая его на ваш этаж!</p>
-							
+		                   его на ваш этаж!</p>						
                     </div>
 					<div class="images-truck">
 					
 					</div>
 									 
-                </div>
-			 
+                </div>		    
                 <div id="security">
                     <div class="security-content">
                         <h2>Гарантия</h2>
                         <p>Если купленный у нас товар поломается или заискрит,<br> 
                        а также в случае пожара, спровоцированного его возгаранием,  вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br>
                        Дом уж восстановите как-нибудь сами.</p>
-                      
+                      <div class="images-discount">
+				
+					</div>
                                       
                   </div>
-                    <div class="images-discount">
-				
-					</div>				  
+                    				  
                 </div>			
                 <div id="credits">
                     <div class="credits-content">
@@ -244,10 +243,11 @@
                         <p>Залезть в долговую яму стало проще! 
                         Кредитные консультанты придут вам на помощь.</p>
 						<a class="bth" href="">Подробнее о комании</a>
-                    </div>                
-					<div class="images-credit">
+						<div class="images-credit">
 					
 					</div>
+                   </div>                
+					
                 </div>     
             </div>	  	
         </div>  
@@ -260,7 +260,7 @@
         <div class="index-content-left">
             <h2 class="index-content-title">Компания &laquo;техномарт&raquo;</h2>
             <p>Настощий мужской шопинг начинается здесь! Огромный выбор товаров для ремонта и
-          строительства не оставит равнодушными любителей на гастарбайтерах.</p>
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.</p>
           
           <p class="text">Мы можем доставить товары в самые отдельный точки в России!
     	  Техномарт работает со многими транспортными компаниями:</p>
@@ -269,7 +269,7 @@
               <li><a class="services" href="#">Автотрейдинг</a></li>
               <li><a class="team" href="#">ЖелДорЭкспедиция</a></li>
             </ul>
-          <a class="bth" href="">Подробнее о комании</a>
+          <a class="bth" href="">Подробнее о компании</a>
         </div>
         <div class="map">
             <h2 class="index-content-title">Контакты</h2>
@@ -278,7 +278,7 @@
              <div class="mapin">		 
 			     <a class="map" href="map.html"><img width="300" height="158" src="img/Карта.jpg" alt=""></a> 
              </div>
-			 <a class="btn-2" href="#">Заблудитесь напишите нам</a>
+			 <a class="login-link" href="#">Заблудились? напишите нам!</a>
         </div> 	
      </div>
     </div>
@@ -347,140 +347,56 @@
    </footer>			
    
        
-     <section class="modal modal-buy">
-            <h2>Товар добавлен в корзину!</h2>
-		    <div class="order">
-		  
-		    <a class="issue" href="#">Оформить заказ</a>
-		    <a class="buy-return" href="#">Продолжить покупки</a>
-		    </div>		
-         <button class="modal-close" type="button" >Закрыть</button>
-    </section>
-	<section class="modal modal-login">
-   <form class="login-submit" action="https://echo.htmlacademy.ru" method="post">      
-        <div class="half-width">
-         <label class="name" for="name">Ваше имя</label> 
-         <input type="text" id="name" name="text" required placeholder="Представтесть пожалуйста">
-        </div>
-		<div class="half-width">
-         <label class="email" for="email">Ваш e-mail</label>
-         <input type="email" id="email" name="email" required placeholder="Для отправки ответа">
-		</div>	
-		<label class="letter" for="address">Текст письма:</label>
-        <textarea id="address" name="address" rows="6" required  placeholder="В свободной форме"></textarea>
-		<div class="submit">	  
-		<button class="btn" type="submit">Отправить</button>
-		</div>
-    </form>
-    <button class="modal-close" type="button">Закрыть</button>
-    </section>
+   <section class="modal modal-login">
+  <h2>Личный кабинет</h2>
+  <p class="modal-description">Введите пожалуйста свой логин и пароль</p>
+  <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+    <p>
+      <label class="visually-hidden" for="user-login">Логин</label>
+      <input class="login-icon-user" id="user-login" type="text" name="login" placeholder="Логин">
+    </p>
+    <p>
+      <label class="visually-hidden" for="user-password">Пароль</label>
+      <input class="login-icon-password" id="user-password" type="password" name="password" placeholder="Пароль">
+    </p>
+    <p class="login-help">
+      <label class="login-checkbox">
+        <input type="checkbox" name="remember" class="visually-hidden">
+        <span class="checkbox-indicator"></span>
+        Запомните меня
+      </label>
+      <a class="restore" href="#">Я забыл пароль!</a>
+    </p>
+    <button class="button" type="submit">Войти</button>
+  </form>
+  <button class="modal-close" type="button">Закрыть</button>
+</section>
    <section class="modal modal-map">
   <h2 class="visually-hidden">Как до нас добраться</h2>
   <p><img src="img/Карта.jpg" width="780" height="560" alt="Офис компании по адресу ул. Большая Конюшенная 19/8, Санкт-Петербург"></p>
   <button class="modal-close" type="button">Закрыть</button>
   </section>
-   	<script>
- <!--Скрипт для изменения цвета при нажатии в врехней вкладки-->
-
-
-
-
-	
-var count = 0;
-$( ".user-block" ).each(function() {
-  var $thisParagraph = $( this );
-  var count = 0;
-  $('.bookmarks').click(function() {
-    count++;
-    $thisParagraph.find( ".bookmark" ).text( "Закладки:" + count );
-    $thisParagraph.toggleClass( ".bookmark", count % 3 === 0 );
-	
-  });
-});
-$(document).ready(function(){
-    $('#color_change').click(function(){
-        $('.bookmark').css('background', '#F00', 'height', '133px');
-    })
-});
-	
-	
-	
-	
-	
-	
-	
-	<!--Скрипт для раскрытия форм-->
-	
-
-  var buyLink = document.querySelector(".buy");
-
-  var buyPopup = document.querySelector(".modal-buy");
-  var buyClose = buyPopup.querySelector(".modal-close");
-  
-  
-  buyLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.add("modal-show");
-  });
-
-  buyClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.remove("modal-show");
-  });
-  
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (buyPopup.classList.contains("modal-show")) {
-        buyPopup.classList.remove("modal-show");
-      }
-    }
-  });
-  var buyLink = document.querySelector(".buy");
-
-  var buyPopup = document.querySelector(".modal-buy");
-  var buyClose = buyPopup.querySelector(".modal-close");
-  
-  buyLink.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.add("modal-show");
-  });
-
-  buyClose.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    buyPopup.classList.remove("modal-show");
-  });
-
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      if (buyPopup.classList.contains("modal-show")) {
-        buyPopup.classList.remove("modal-show");
-      }
-    }
-  });
-
-
-
-
-  var link = document.querySelector(".btn-2");
+  <script>
+  var link = document.querySelector(".login-link");
   
   var popup = document.querySelector(".modal-login");
   var close = popup.querySelector(".modal-close");
   
   var form = popup.querySelector("form");
-  var text = popup.querySelector("[name=text]");
-  var email = popup.querySelector("[name=email]");
+  var login = popup.querySelector("[name=login]");
+  var password = popup.querySelector("[name=password]");
   
-  var storage = localStorage.getItem("text");
+  var storage = localStorage.getItem("login");
   
   link.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.add("modal-show");
     
     if (storage) {
-      text.value = storage;
-      email.focus();
+      login.value = storage;
+      password.focus();
     } else {
-      text.focus();
+      login.focus();
     }
   });
   
@@ -491,13 +407,13 @@ $(document).ready(function(){
   });
   
   form.addEventListener("submit", function (evt) {
-    if (!text.value || !email.value) {
+    if (!login.value || !password.value) {
       evt.preventDefault();
       popup.classList.remove("modal-error");
       popup.offsetWidth = popup.offsetWidth;
       popup.classList.add("modal-error");
     } else {
-      localStorage.setItem("text", text.value);
+      localStorage.setItem("login", login.value);
     }
   });
   
@@ -509,8 +425,36 @@ $(document).ready(function(){
       }
     }
   });
+  
+ <!--  security c tab-menu-->
+  var securityLink = document.querySelector(".security");
+<!-- ищем ссылку с security -->
+  var securityPopup = document.querySelector(".security-content");
+ 
+  
+  securityLink.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    securityPopup.classList.add("modal-show");
+  });
+ <!-- Поймаем событие на этой кнопки-->
+  securityClose.addEventListener("click", function (evt) {
+    evt.preventDefault();
+    securityPopup.classList.remove("modal-show");
+
+  window.addEventListener("keydown", function (evt) {
+    if (evt.keyCode === 27) {
+      if (securityPopup.classList.contains("modal-show")) {
+        securityPopup.classList.remove("modal-show");
+      }
+    }
+  });
 	
+	
+
+  
 </script>
+
+
   </body>
 </html>
 
