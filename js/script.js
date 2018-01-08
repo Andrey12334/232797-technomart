@@ -17,20 +17,20 @@ window.addEventListener("keydown", function (event) {
 for (var i = 0; i < BuyButtons.length; i++) {
   BuyButtons[i].addEventListener("click", function (event) {
     event.preventDefault();
-    modalbuy .classList.add("modal-show");
-    var value = parseInt(basketItemsamount .innerHTML);
+    modalbuy.classList.add("modal-show");
+    var value = parseInt(basketItemsamount.innerHTML);
     value = value + 1;
-    basketItemsamount .innerHTML = (value + "");
+    basketItemsamount.innerHTML = (value + "");
     Basket.classList.add("top-header--active");
   });
 }
 for (var i = 0; i < BookmarkButtons.length; i++) {
     BookmarkButtons[i].addEventListener("click", function (event) {
     event.preventDefault();
-    modalbuy .classList.add("modal-show");
-    var value = parseInt(bookmarkItemsamount .innerHTML);
+    modalbuy.classList.add("modal-show");
+    var value = parseInt(bookmarkItemsamount.innerHTML);
     value = value + 1;
-    bookmarkItemsamount .innerHTML = (value + "");
+    bookmarkItemsamount.innerHTML = (value + "");
     Bookmark.classList.add("top-header--active");
   });
 }
