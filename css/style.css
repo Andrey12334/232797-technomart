@@ -19,7 +19,12 @@ html, body {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
+        justify-content: space-between;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;
+    
 
 }
 .header-top .main {
@@ -32,7 +37,7 @@ html, body {
     height: 20px;
     line-height: 24px;
     margin: 0;
-    padding: 11px 52px;
+    padding: 11px 54px;
     text-decoration: none;
     text-transform: uppercase;
     width: 112px;
@@ -49,88 +54,92 @@ a {
     text-decoration: none;
 }
 .page-header-search {
-    height: 40px;
-    margin-right: 1px;
-    position: relative;
-    width: 289px;
-    font-family: "Cuprum","Helvetica",sans-serif;
+  position: relative;
+  width: 270px;
 }
-.page-header-search:hover {
-    background-color: #212a3a;
+
+.page-header-search:hover,
+.page-header-link:hover {
+  background-color: #212a3a;
 }
+
 .page-header-link:active {
-    background-color: #161d29;
+  color: rgba(255, 255, 255, .6);
+  background-color: #161d29;
 }
-.page-header-search:hover::before, .page-header-link:hover::before {
-    opacity: 1;
+
+.page-header-search:hover::before,
+.page-header-link:hover::before {
+  opacity: 1;
 }
+
 .page-header-link:active::before {
+  opacity: .5;
 }
+
 .page-header-search label {
-    background-image: url("../img/icon-search.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    font-size: 0;
-    height: 20px;
-    left: 20px;
-    opacity: 0.3;
-    position: absolute;
-    top: 63%;
-    -webkit-transform: translateY(-50%);
-        -ms-transform: translateY(-50%);
-            transform: translateY(-50%);
-    width: 120%;
+  position: absolute;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  width: 17px;
+  height: 17px;
+  font-size: 0;
+  background-image: url("https://img.angra.pw/technomart/spritesheet.png");
+  background-repeat: no-repeat;
+  background-position: -109px -2px;
+  opacity: .3;
 }
+
 .page-header-search input {
-    background-color: #293449;
-    border: medium none;
-    font-family: inherit;
-    font-size: 17px;
-    font-size-adjust: inherit;
-    font-stretch: inherit;
-    font-style: inherit;
-    font-variant: inherit;
-    font-weight: inherit;
-    height: 40px;
-    line-height: 18px;
-    padding-left: 51px;
-    padding-top: 6px;
-    width: 100%;
+  padding-left: 48px;
+  width: 100%;
+  height: 42px;
+  border: none;
+  font: inherit;
+  background-color: #293449;
+  box-sizing: border-box;
 }
+
 .page-header-search input:hover {
-    background-color: #212a3a;
+  background-color: #212a3a;
 }
+
 .page-header-search input:focus {
-    background-color: #ffffff;
-    height: 50px;
-    margin-left: 0;
+  background-color: #ffffff;
 }
+
 .page-header-search input:hover + label {
-    opacity: 1;
+  opacity: 1;
 }
+
 .page-header-search input:focus + label {
-    background-image: url("../img/icon-search-3.svg");
-    background-position: 0 0;
-    background-repeat: no-repeat;
-    height: 19px;
-    margin: 0;
-    opacity: 1;
-    width: 19px;
+  background-position: -114px -23px;
+  opacity: 1;
 }
+
 .page-header-search input::-webkit-input-placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
+
 .page-header-search input:-ms-input-placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
-.page-header-search input::-ms-input-placeholder {
-    color: #ffffff;
-}
+
 .page-header-search input::placeholder {
-    color: #ffffff;
+  color: #ffffff;
 }
+
+.page-header-search input::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
 .page-header-search input::-moz-placeholder {
-    color: #ffffff;
+  color: #ffffff;
+}
+
+.page-header-search input:-ms-input-placeholder {
+  color: #ffffff;
 }
 .top-header--active {
     background-color: red;
@@ -140,7 +149,7 @@ a {
     
     display: -webkit-box; 
     display: -ms-flexbox;
-    flex: align-center;
+    
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -148,33 +157,35 @@ a {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    list-style: outside none none;
-    padding-left: 17px;
-    margin-top: 0px;
-    margin-left: 1px;
+	-webkit-box-orient:horizontal;
+	-webkit-box-direction:normal;
+	-ms-flex-direction:row;
+	flex-direction:row;	
+     padding: 0;
+     margin: 0;
+    
    
     
     width: 470px;
 }
 
 .user-block a {
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
+   
     color: #ffffff;   
     font-size: 17px;
     line-height: 18px;
-    padding: 13px 22px;
+    padding: 13px 0px;
    
   	display: block;
     
 }
 
 .user-block a:first-child {
-    padding-left: 27px;
+    padding-left: 40px;
     padding-right: 12px;
 } 
  .user-block a:nth-child(2) {
-     padding-left: 32px;
+     padding-left: 38px;
  }
 
 .top-header--active {
@@ -197,11 +208,13 @@ a {
   
     
     position: relative; 
-    display: inline-block;
-    box-sizing: border-box;
-    width: 34%;
+    display: block;
+     -webkit-box-sizing: border-box;
+            box-sizing: border-box; 
+    width: 36%;
     height: 42px;
-    margin-left: 1px;
+    margin-left: 0px;
+	
    
     
    
@@ -233,7 +246,8 @@ a {
   
     position: relative;
     display: inline-block;
-    box-sizing: border-box;  
+   -webkit-box-sizing: border-box;
+            box-sizing: border-box;  
     width: 31%;
     height: 42px;
    
@@ -269,7 +283,8 @@ a {
     vertical-align: middle; 
     margin: 0;
     display: block;
-    padding: 12px 22px;
+    padding: 12px 0;
+	width: 33%;
     height: 42px;
    
   
@@ -352,18 +367,91 @@ a {
     line-height: 24px;
     margin-top: 2px;
 }
+.header-bottom-page-1 {
+    background-color: #f2f6f8;
+}
+.header-bottom-page-1 .header-bottom-wrapper {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: -1px;
+    padding-top: 27px;
+}
+.header-information {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #ee3643;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 23px;
+    margin-right: 0;
+    padding-left: 50px;
+    padding-right: 39px;
+    padding-top: 6px;
+    width: 300px;
+}
+.header-contacts {
+    padding-right: 13px;
+    padding-top: 20px;
+    width: 286px;
+}
+.header-contacts > div {
+    border: 2px solid #ffffff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    color: #e9292a;
+    font-size: 21px;
+    line-height: 21px;
+    margin-bottom: -2px;
+    padding: 9px 4px 12px 68px;
+    width: 265px;
+}
+.adress {
+    padding-left: 1px;
+}
+.logo {
+    margin-bottom: 12px;
+}
+.phone {
+    position: relative;
+}
+.phone::before {
+    background-image: url("../img/icon-phone.svg");
+    background-position: 1px 1px;
+    background-repeat: no-repeat;
+    content: "";
+    height: 20px;
+    position: absolute;
+    right: 227px;
+    top: 12px;
+    width: 21px;
+}
+.header-contacts .adress {
+    color: #32425c;
+    font-size: 14px;
+    line-height: 24px;
+    margin-top: 2px;
+}
 .header-authorization {
-    display: -webkit-inline-box;
-    display: -ms-inline-flexbox;
-    display: inline-flex;
-    margin: 0px 1px 35px 0px;
+   
+    display: inline-block;
+    padding: 0px 0px 12px 0px;
     padding-left: 10px;
-    width: 289px;
+    width: 310px;
+	align-self: flex-end;
 }
 .header-authorization .sign-up {
     background-color: #ffffff;
     margin-right: 10px;
-    margin-top: 11px;
+    
     padding: 8px 26px 10px 52px;
 }
 .header-authorization .log {
@@ -372,7 +460,6 @@ a {
             box-sizing: border-box;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin-top: 11px;
     padding: 10px 26px;
     width: 166px;
     padding-top:7px;
@@ -1062,221 +1149,115 @@ img[src$="jpg"][alt*="metabo"] {
 .catalog-company .catalog-item2:nth-child(4n) {
     margin-right: 0;
 }
-.catalog-company .catalog-item2:nth-child(5) {
-    margin-left: 0;
+
+.techomart-services {
+ padding-top: 40px;
+ padding-bottom: 100px;
+ background-color: #f2f6f8;
 }
-.tab-menu {
-    background-color: #f2f6f8;
-    margin-bottom: 58px;
-    padding: 47px 0;
-    position: relative; 
-   
-}
-.tab-menu h2 {
-    color: #000000;
+ .services__h2 {
     font-size: 30px;
-    font-weight: normal;
-    line-height: 30px;
+     line-height: 24px;
+     padding-top: 5px;
+     font-weight: normal;
     text-transform: uppercase;
-    margin-bottom: 23px;
 }
-.tab-menu p {
-    font-family: "PT Sans", "Helvetica", sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    letter-spacing: 0.011em;
-    width: 405px;
-    margin-bottom: 50px;
-}
-
-.box-shadow {
-
-}
-.box-shadow::before {
-	position: absolute;
-	background-image: url("../img/box-shadow.png");  
-    background-repeat: no-repeat;	
-    content: "";
-    height: 258px;
-    left: 220px;
-    position: absolute;
-    top: -23px;
-    width: 30px;
-	
-}
-
-
-.service-toggle {
-  bottom:95%;
-  height:17px;
-  position:absolute;
-  z-index:60;
-}
-.service-toggle label {
-  background-color:#32425C;
-  border-bottom:1px solid #293449;
-  border-top:1px solid #405069;
-  color:#FFFFFF;
-  cursor:pointer;
-  display:block;
-  font-family: "Cuprum","Helvetica",sans-serif;
-  font-size:21px;
-  font-style:normal;
-  font-weight:700;
-  line-height:30px;
-  outline:none;
-  padding:13px 0 17px 22px;
-  text-align:left;
-  width:218px;
-}
-#button-1:checked ~ .service-toggle label[for="button-1"], #button-2:checked ~ .service-toggle label[for="button-2"], #button-3:checked ~ .service-toggle label[for="button-3"] {
-  background:#FFFFFF;
-  border-bottom:1px solid #FFFFFF;
-  border-top:1px solid #FFFFFF;
-  color:#32425C;
-  outline:none;
-}
-.service-touch-button p, .service-touch-button span {
-  
-  font-style:normal;
-  font-weight:400;
-  line-height:24px;  
- 
-}
-.service-touch-button span {
-  color:#32425C;
-  font-family: "Cuprum","Helvetica",sans-serif;
-  font-size:36px;
-  padding:9px 0 31px 82px;
-  text-transform:uppercase;
-}
-.service-touch-button p {
-  font-family:"PT Sans", "Helvetica", sans-serif;
-  font-size:13px; 
-  padding-left:80px;
-  width:2760x;
-  line-height:24px;
+.services__title-block {
+ width: 100%;
+ padding-bottom: 29px;
  
 }
 
-.credit .btn {
-  background:#EE3642;
-  border-radius:5px;
-  color:#FFFFFF;
-  display:block;
-   font-family: "Cuprum","Helvetica",sans-serif;
-  font-size:14px;
-  font-style:normal;
-  font-weight:400;
-  line-height:18px;
-  margin:27px 0 0 78px;
-  outline:none;
-  padding:10px 44px;
-  text-align:center;
-  text-decoration:none;
-  text-transform:uppercase;
-  width:107px;
+.services__description {
+ font-size: 13px;
+ line-height: 24px;
+ color: #000000;
+ font-family: "PT Sans", sans-serif;   
+    
 }
-
-.delivery p {
-    width: 260px;
-}
-.garantia p {
-  width:383px;
-}
-
-.service-touch-button {
-  display:none;
-  margin-left:242px;
-  padding-bottom:124px;
-}
-#button-1:checked ~ .service-block-right .delivery, #button-2:checked ~ .service-block-right .garantia, #button-3:checked ~ .service-block-right .credit {
-  display:block;
-}
-.service-slides {
-    display: -webkit-box;
+.services__slider {
+ position: relative;
+  display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     position: relative;
-    margin-bottom: 28px;
-	
-}
-.service-slides::after {
-  background:url("../img/box-shadow.png") 0px 0 no-repeat;
-  content:"";
-  height:284px;
-  left:230px;
-  position:absolute;
-  top:-45px;
-  width:15px;
-  z-index:70;
+   
+  
 }
 
-.tab-panels {
-    margin-right: 120px;
+.services__input {
+ display: none;
 }
-.images-truck {
-    margin-left: 10px;
-    position: relative;
+.services__switches {
+ position: relative;
+ padding-top: 34px;
+ margin-bottom: 12px;
+ width: 240px;
 }
-.images-truck::before {
-    background-image: url("../img/truck.png");
-    background-position: 1px 5px;
-    background-repeat: no-repeat;
-    
-    
-    content: "";
-    height: 227px;
-    left: 170px;
-    position: absolute;
-    top: -180px;
-    width: 468px;
+
+.services__label {
+ display: block;
+ padding-top: 14px;
+ padding-left: 22px;
+ padding-bottom: 17px;
+ color: #ffffff;
+ background-color: #32425c;
+ font-size: 21px;
+ line-height: 30px;
+ cursor: pointer;
+ border-bottom: 1px solid #293449;
+ border-top: 1px solid #405069;
 }
-.images-discount {
-    margin-left: 10px;
-    position: relative;
+.services__label:last-of-type {
+ padding-bottom: 14px;
 }
-.images-discount::before {
-    background-image: url("../img/discount.png");
-    background-position: 1px 1px;
-    background-repeat: no-repeat;
-    content: "";
-    height: 240px;
-    left: 285px;
-    position: absolute;
-    top: -210px;
-    width: 400px;
+.services__label:hover {
+ background-color: #293449;
 }
-.images-credit {
-    margin-left: 10px;
-    position: relative;
+#delivery:checked ~ .services__switches > label[for="delivery"],#warranty:checked ~ .services__switches > label[for="warranty"],#credit:checked ~ .services__switches > label[for="credit"] {
+ color: #32425c;
+ background-color: #ffffff;
+ border: none;
 }
-.images-credit::before {
-    background-image: url("../img/trust.png");
-    background-position: -50px 2px;
-    background-repeat: no-repeat;
-       
-    content: "";
-    height: 232px;
-    left: 290px;
-    position: absolute;
-    top: -180px;
-    width: 420px;
+.services__wrapper {
+ position: relative;
+ padding-top: 3px;
+ width: 620px;
+ padding-right: 0px;
+ 
 }
-.credits-content .bth {
-    background: #ee3643 none repeat scroll 0 0;
-    border-radius: 3px;
-    color: white;
-    font-size: 14px;
-    line-height: 18px;
-    padding: 13px 50px;
-    text-align: center;
-    text-decoration: none;
-    text-transform: uppercase;
+.services__slide {
+ position: relative;
+ display: none;
+ 
+
 }
+
+
+
+.services__img_delivery {
+ bottom: 15px;
+}
+.services__img_warranty {
+ right: -8px;
+ bottom: 10px;
+}
+.services__img_credit {
+ right: -27px;
+}
+.services__button {
+ width: 195px;
+ padding-top: 10px;
+ padding-bottom: 10px;
+}
+#delivery:checked ~ .services__wrapper > .services__slide_1,#warranty:checked ~ .services__wrapper > .services__slide_2,#credit:checked ~ .services__wrapper > .services__slide_3 {
+ display: block;
+ 
+}
+
 .about-technomart {
     display: -webkit-box;
     display: -ms-flexbox;
